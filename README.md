@@ -13,10 +13,10 @@ I recognize that there is an infinite number of different approaches that can be
 I will take a collection of different stocks and feed them into the model for a prediction of tomorrow’s closing price. Then, using MatPlotLib, I will calculate the percent change from open to close. For the top three stocks, I will purchase an equal amount of those at open and then sell them at close. 
 
 # Methods to employ
-*We will develop different models and then use Arize.AI to benchmark their performance against each other. The number of models and their design is yet to be determined. Here is a suggested list that we will iterate through. 
-*A simple RNN using the last 30 days of closing price for stocks. 
-*An improved RNN using the last 30 days of closing price, plus some additional features for the model. 
-*A simple ML regression model using multiple features. Developed and designed using Microsoft ML Studio. 
+* We will develop different models and then use Arize.AI to benchmark their performance against each other. The number of models and their design is yet to be determined. Here is a suggested list that we will iterate through. 
+* A simple RNN using the last 30 days of closing price for stocks. 
+* An improved RNN using the last 30 days of closing price, plus some additional features for the model. 
+* A simple ML regression model using multiple features. Developed and designed using Microsoft ML Studio. 
 
 # Sourcing the data
 
@@ -29,18 +29,18 @@ Performance against the benchmark. I’ll be able to track the total return of m
 # High level components of the system
 
 # Data gathering
-*From a CSV list of stock symbols, the system will query Yahoo Finance via the YFinance Python Library.
-*Data about each symbol will be loaded into a dataframe and then persisted into a CSV file with a name of [date+stockinformation.csv]
+* From a CSV list of stock symbols, the system will query Yahoo Finance via the YFinance Python Library.
+* Data about each symbol will be loaded into a dataframe and then persisted into a CSV file with a name of [date+stockinformation.csv]
 
 # Model Training
-*Given today’s date, go open the file with today’s stock information. 
-*Trail a RNN model 
-*Deploy this model
+* Given today’s date, go open the file with today’s stock information. 
+* Trail a RNN model 
+* Deploy this model
 
 # Model Prediction
-*Open the CSV file that contains all of the stocks. 
+* Open the CSV file that contains all of the stocks. 
 
 # Model Benchmarking
-*At the close of each day get the closing values 
+* At the close of each day get the closing values 
 
 
